@@ -13,8 +13,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 
 | Módulo | Quién lo ha llevado | Nivel de IA (0-3) | Nº de prompts | ¿Lo podríais repetir sin IA? (sí / en parte / no) |
 |-variables.py`| Daniela| 2 | 2 | si |
-
-| `clases.py` | | | | |
+|`clases.py` | Daniela | 2/3| 7 | algunas si, otras no, me cuesta recordar los pasos a seguir a pesar de entender la logica |
 | `funciones.py` | | | | |
 | `main.py` | | | | |
 | `README.md` | | | | |
@@ -56,3 +55,76 @@ Copiad este bloque por cada prompt que haya influido en vuestro código.
 - **Cambios:**  modificado las variables con los datos reales
 - **Comprobación:** -
 - **Decisión propia:** ninguna
+
+### clases.py · Prompt 1
+
+- **Objetivo:** entender como estructurar el modulo paso a paso.
+- **Prompt:** estructura del modulo clases
+- **Respuesta relevante:** 
+    Importaciones + class Tablero + __init__
+    mostrar() (para ver el tablero desde el principio)
+    recibir_disparo(fila, columna)
+    Limpiar pruebas (print() de depuración).
+- **Cambios:** -
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
+
+### clases.py · Prompt 2
+
+- **Objetivo:** entender cada paso.
+- **Prompt:** repasamos el __init__ : para que sirve? y como se estructura (no utilices mis datos!)
+- **Respuesta relevante:** 
+    1.Encabezado del método: def __init__(self, ...):
+    2.Asignación de atributos con self.: Dentro del cuerpo se guardan los valores iniciales en atributos propios del objeto (self.atributo = valor)
+- **Cambios:** rescribir con los datos reales del juego
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
+
+### clases.py · Prompt 3
+
+- **Objetivo:** aprender codigo np.ndarray
+- **Prompt:** ¿como codifico esto:
+tablero (np.ndarray): "Barcos del jugador y disparos recibidos.
+disparos (np.ndarray): Solo los disparos recibidos, sin barcos." ?
+- **Respuesta relevante:** 
+    self.tablero = np.full((self.tamano, self.tamano), AGUA, dtype="<U2")
+    self.disparos = np.full((self.tamano, self.tamano), AGUA, dtype="<U2")
+- **Cambios:** -
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
+
+### clases.py · Prompt 4
+
+- **Objetivo:** aprender codigo
+- **Prompt:** mostrar() explicame el codigo
+- **Respuesta relevante:** me ha mostrado y explicado cada linea
+- **Cambios:** -
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
+
+### clases.py · Prompt 5
+
+- **Objetivo:** aprender codigo
+- **Prompt:** en recibir disparos que metodo utilizamos? dame pistas!
+- **Respuesta relevante:** usar estructuras básicas que ya conoces: leer una posición de tu array de NumPy y tomar decisiones con if / elif / else
+- **Cambios:** -
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
+
+### clases.py · Prompt 6
+
+- **Objetivo:** aprender codigo
+- **Prompt:** ¿ que metodo en colocar_barcos() ? base docstring y ejemplo code
+- **Respuesta relevante:** el método que estás creando es def colocar_barcos(self) -> None: dentro de class Tablero, y por dentro combina bucles (for y while), random y comprobaciones sobre self.tablero (usando self.tamano, self.barcos, AGUA y BARCO importados de variables.py).
+- **Cambios:** -
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
+
+### clases.py · Prompt 7
+
+- **Objetivo:** aprender codigo
+- **Prompt:** no se hacer un bucle tan largo y menos la comprobacion del bucle. explicame todo  por favor
+- **Respuesta relevante:** La clave para no perderte es partirlo en piezas cortas (o incluso en pequeños pasos mentales) y entender qué revisa la comprobación.
+- **Cambios:** -
+- **Comprobación:** run/terminal
+- **Decisión propia:** -
