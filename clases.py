@@ -13,14 +13,14 @@ class Tablero:
         tablero (np.ndarray): Barcos del jugador y disparos recibidos.
         disparos (np.ndarray): Sin barcos, disparos recibidos.
     """
-def __init__(self, id_jugador : str):
+    def __init__(self, id_jugador : str):
         self.id_jugador = id_jugador
         self.tamano = TABLERO
         self.barcos = BARCOS
         self.tablero = np.full((self.tamano, self.tamano), AGUA, dtype="<U2")
         self.disparos = np.full((self.tamano, self.tamano), AGUA, dtype="<U2")
 
-def mostrar(self, ocultar_barcos: bool = False) -> None:
+    def mostrar(self, ocultar_barcos: bool = False) -> None:
         """
         Imprime el tablero en consola con índices de filas y columnas.
 
@@ -38,7 +38,7 @@ def mostrar(self, ocultar_barcos: bool = False) -> None:
             contenido_fila = " ".join(f"{celda:>2}" for celda in matriz[fila])
             print(f"{fila:>2} {contenido_fila}")
 
-def recibir_disparos(self, fila: int, columna:int):
+    def recibir_disparos(self, fila: int, columna:int):
         """
         Un disparo por casilla (fila, columna).
         
@@ -54,15 +54,15 @@ def recibir_disparos(self, fila: int, columna:int):
         if casilla in (TOCADO, FALLO):
               return "repetido"
         if casilla == BARCO:
-              self.tablero[fila, columna] == TOCADO
-              self.disparos[fila, columna] == TOCADO
+              self.tablero[fila, columna] = TOCADO
+              self.disparos[fila, columna] = TOCADO
               return "tocado"
 
-        self.tablero[fila, columna] == FALLO
-        self.disparos[fila, columna] == FALLO
+        self.tablero[fila, columna] = FALLO
+        self.disparos[fila, columna] = FALLO
         return "agua"
 
-def colocar_barcos(self) -> None:
+    def colocar_barcos(self) -> None:
         """
         Coloca aleatoriamente los barcos de la flota en el tablero.
 
