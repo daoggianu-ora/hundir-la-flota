@@ -14,7 +14,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 | Módulo | Quién lo ha llevado | Nivel de IA (0-3) | Nº de prompts | ¿Lo podríais repetir sin IA? (sí / en parte / no) |
 |`variables.py`| Daniela| 2 | 2 | si |
 |`clases.py` | Daniela | 2/3| 7 | algunas si, otras no, me cuesta recordar los pasos a seguir a pesar de entender la logica |
-| `funciones.py` |Daniela  | | | |
+| `funciones.py` |Daniela  |2/3 | 3 | quizas en parte |
 | `main.py` | | | | |
 | `README.md` | | | | |
 
