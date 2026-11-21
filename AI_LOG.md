@@ -12,9 +12,9 @@ Este registro no cuenta para la nota. Sirve para ver dónde vais solos y dónde 
 Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** la IA escribe partes y las adaptamos · **3** casi todo lo escribe la IA
 
 | Módulo | Quién lo ha llevado | Nivel de IA (0-3) | Nº de prompts | ¿Lo podríais repetir sin IA? (sí / en parte / no) |
-|-variables.py`| Daniela| 2 | 2 | si |
+|`variables.py`| Daniela| 2 | 2 | si |
 |`clases.py` | Daniela | 2/3| 7 | algunas si, otras no, me cuesta recordar los pasos a seguir a pesar de entender la logica |
-| `funciones.py` | | | | |
+| `funciones.py` |Daniela  | | | |
 | `main.py` | | | | |
 | `README.md` | | | | |
 
@@ -128,3 +128,30 @@ disparos (np.ndarray): Solo los disparos recibidos, sin barcos." ?
 - **Cambios:** -
 - **Comprobación:** run/terminal
 - **Decisión propia:** -
+
+### funciones.py · Prompt 1
+
+- **Objetivo:** imprimir instrucciones 
+- **Prompt:** pista sobre imprimir instrucciones
+- **Respuesta relevante:** Saludo y objetivo: imprimir MENSAJE_BIENVENIDA y explicar que hay que hundir todos los barcos del rival. Coordenadas: indicar que en cada turno se eligen fila y columna entre 0 y TABLERO - 1. Símbolos: mostrar qué representa cada constante (AGUA, BARCO, TOCADO, FALLO).
+- **Cambios:** -
+- **Comprobación:** -
+- **Decisión propia:** -
+
+### funciones.py · Prompt 2
+
+- **Objetivo:** codigo correcto.
+- **Prompt:** pista para la funcion pedir y validar las coordenadas del jugador
+- **Respuesta relevante:** while True: / try ... except ValueError: / 0 <= fila <= limite_maximo / return fila, columna 
+- **Cambios:** agregar datos
+- **Comprobación:** terminal
+- **Decisión propia:** -
+
+### funciones.py · Prompt 3
+
+- **Objetivo:** disparar al azar.
+- **Prompt:** Por favor, ayudame a crear la función para que la máquina dispare a una casilla al azar del tablero sin que repita casillas donde ya disparó antes
+- **Respuesta relevante:** el codigo
+- **Cambios:** - 
+- **Comprobación:** terminal
+- **Decisión propia:** copiarlo tal y cual
