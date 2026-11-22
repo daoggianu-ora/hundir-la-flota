@@ -30,5 +30,7 @@ Juego de **Hundir la Flota** por consola desarrollado en Python para el *Team Ch
 ## Instalación y ejecución
 
 1. Instala las dependencias:
+
    ```bash
    pip install -r requirements.txt
+   
