@@ -15,7 +15,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 |`variables.py`| Daniela| 2 | 2 | si |
 |`clases.py` | Daniela | 2/3| 7 | algunas si, otras no, me cuesta recordar los pasos a seguir a pesar de entender la logica |
 | `funciones.py` |Daniela  |2/3 | 3 | quizas en parte |
-| `main.py` | | | | |
+| `main.py` | Daniela | 2/3 | 1 | casi nada |
 | `README.md` | | | | |
 
 ## Registro de prompts
@@ -155,3 +155,21 @@ disparos (np.ndarray): Solo los disparos recibidos, sin barcos." ?
 - **Cambios:** - 
 - **Comprobación:** terminal
 - **Decisión propia:** copiarlo tal y cual
+
+### main.py · Prompt 1
+
+- **Objetivo:** juntar las partes 
+- **Prompt:** Explicame como voy a unir las partes de codigo trabajado, excepto lo imput.
+- **Respuesta relevante:** El código unido (sin los import)
+- **Cambios:** -
+- **Comprobación:** terminal.
+- **Decisión propia:** - 
+
+### main.py · Prompt 2
+
+- **Objetivo:** probar el juego.
+- **Prompt:** comandos bash para probar el juego.
+- **Respuesta relevante:** pasos a seguir.
+- **Cambios:** -
+- **Comprobación:** bash.
+- **Decisión propia:** - 
