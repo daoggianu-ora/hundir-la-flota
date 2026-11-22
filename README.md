@@ -8,6 +8,7 @@ Juego de **Hundir la Flota** por consola desarrollado en Python para el *Team Ch
 - `clases.py`: clase `Tablero` con colocación de barcos, gestión de disparos y visualización.
 - `funciones.py`: funciones auxiliares para mostrar instrucciones, pedir y validar coordenadas y gestionar el disparo de la máquina.
 - `main.py`: punto de entrada y bucle principal de la partida.
+- `README.md`: documentación general del proyecto, reglas, estructura y ejecución.
 - `requirements.txt`: librerias externas necesarias para ejecutar el proyecto.
 - `AI_LOG.md`: registro del uso de IA durante el desarrollo.
 
