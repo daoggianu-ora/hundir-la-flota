@@ -16,7 +16,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 |`clases.py` | Daniela | 2/3| 7 | algunas si, otras no, me cuesta recordar los pasos a seguir a pesar de entender la logica |
 | `funciones.py` |Daniela  |2/3 | 3 | quizas en parte |
 | `main.py` | Daniela | 2/3 | 1 | casi nada |
-| `README.md` | | | | |
+| `README.md` | Daniela | 2/3 | 1 | en parte |
 
 ## Registro de prompts
 
@@ -172,4 +172,17 @@ disparos (np.ndarray): Solo los disparos recibidos, sin barcos." ?
 - **Respuesta relevante:** pasos a seguir.
 - **Cambios:** -
 - **Comprobación:** bash.
+- **Decisión propia:** - 
+
+### README.md · Prompt 1
+
+- **Objetivo:** estructura 
+- **Prompt:** como se estructura el readme para este proyecto?
+- **Respuesta relevante:** Estructura recomendada sección por sección:
+Título y descripción
+Estructura del proyecto: Lista rápida de cada archivo y su función
+Reglas y flota
+Instalación y ejecución
+- **Cambios:**  - 
+- **Comprobación:** -
 - **Decisión propia:** - 
